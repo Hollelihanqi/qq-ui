@@ -12,7 +12,7 @@
 
     <script type="module">
       import { createApp } from "vue/dist/vue.esm-bundler.js";
-      import SmartyUI, { SFCButton, JSXButton, QButton } from "../../dist/smarty-ui.esm.js";
+      import { SFCButton, JSXButton, MyButton } from "../../dist/hq-ui.esm.js";
 
       createApp({
         template: `
@@ -22,8 +22,9 @@
         `,
       })
         .component(SFCButton.name, SFCButton)
-        .component(QButton.name, QButton)
-        .component(SFCButton.name, SFCButton);
+        .component(MyButton.name, MyButton)
+        .component(JSXButton.name, JSXButton)
+        .mount("#app");
     </script>
   </body>
 </html>
