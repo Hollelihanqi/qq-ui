@@ -1,12 +1,14 @@
-import { defineComponent, createVNode, openBlock, createElementBlock, createTextVNode } from "vue";
+"use strict";
+Object.defineProperties(exports, { __esModule: { value: true }, [Symbol.toStringTag]: { value: "Module" } });
+const vue = require("vue");
 const __uno = "";
-const MyButton = defineComponent({
+const MyButton = vue.defineComponent({
   name: "QButton",
   setup(props, {
     slots
   }) {
     return () => {
-      return createVNode("button", {
+      return vue.createVNode("button", {
         "class": `
         py-2 
         px-4 
@@ -34,13 +36,13 @@ const _export_sfc = (sfc, props) => {
   return target;
 };
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("button", null, "SFC Button");
+  return vue.openBlock(), vue.createElementBlock("button", null, "SFC Button");
 }
 const SFCButton = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
-const JSXButton = defineComponent({
+const JSXButton = vue.defineComponent({
   name: "JSXButton",
   render() {
-    return createVNode("button", null, [createTextVNode("JSX Button")]);
+    return vue.createVNode("button", null, [vue.createTextVNode("JSX Button")]);
   }
 });
 const entry = {
@@ -50,9 +52,7 @@ const entry = {
     app.component(JSXButton.name, JSXButton);
   }
 };
-export {
-  JSXButton,
-  MyButton,
-  SFCButton,
-  entry as default
-};
+exports.JSXButton = JSXButton;
+exports.MyButton = MyButton;
+exports.SFCButton = SFCButton;
+exports.default = entry;
