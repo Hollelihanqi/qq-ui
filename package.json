@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "docs:dev": "pnpm run register:components && vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "register:components": "vitepress-rc"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +20,8 @@
     "@vitejs/plugin-vue-jsx": "2.0.0",
     "unocss": "^0.45.12",
     "vite": "3.0.7",
-    "vitepress": "1.0.0-alpha.17"
+    "vitepress": "1.0.0-alpha.17",
+    "vitepress-theme-demoblock": "^1.4.2"
   },
   "dependencies": {
     "vue": "3.2.37"
