@@ -1,3 +1,4 @@
+// import {demoBlockPlugin} from 'vitepress-theme-demoblock'
 const sidebar =[
     {
         text: '快速开始',
