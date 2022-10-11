@@ -3,3 +3,4 @@
 
 # Package Manager
 node_modules
+/dist
