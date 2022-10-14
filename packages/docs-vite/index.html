@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hq-ui-vite</h1>
+    <div id="app"></div>
+    <script type="module">
+      import style from "hq-ui-vite/dist/assets/entry.97f76b5f.css";
+      import { createApp } from "vue/dist/vue.esm-bundler.js";
+      import HqUI, {
+        SFCButton,
+        JSXButton,
+        MyButton,
+      } from "hq-ui-vite/dist/hq-ui.mjs";
+      createApp({
+        template: `
+        <div style="margin-bottom:20px;">
+            <QButton color="blue">主要按钮</QButton>
+            <QButton color="green">绿色按钮</QButton>
+            <QButton color="gray">灰色按钮</QButton>
+            <QButton color="yellow">黄色按钮</QButton>
+            <QButton color="red">红色按钮</QButton>
+        </div>
+        <div style="margin-bottom:20px;"
+        >
+            <QButton color="blue" plain>朴素按钮</QButton>
+            <QButton color="green" plain>绿色按钮</QButton>
+            <QButton color="gray" plain>灰色按钮</QButton>
+            <QButton color="yellow" plain>黄色按钮</QButton>
+            <QButton color="red" plain>红色按钮</QButton>
+        </div>
+        <div style="margin-bottom:20px;">
+            <QButton size="small" plain>小按钮</QButton>
+            <QButton size="medium" plain>中按钮</QButton>
+            <QButton size="large" plain>大按钮</QButton>
+        </div>
+        <div style="margin-bottom:20px;">
+            <QButton color="blue" round plain icon="search">搜索按钮</QButton>
+            <QButton color="green" round plain icon="edit">编辑按钮</QButton>
+            <QButton color="gray" round plain icon="check">成功按钮</QButton>
+            <QButton color="yellow" round plain icon="message">提示按钮</QButton>
+            <QButton color="red" round plain icon="delete">删除按钮</QButton>
+        </div>
+        <div style="margin-bottom:20px;">
+            <QButton color="blue" round plain icon="search"></QButton>
+            <QButton color="green" round plain icon="edit"></QButton>
+            <QButton color="gray" round plain icon="check"></QButton>
+            <QButton color="yellow" round plain icon="message"></QButton>
+            <QButton color="red" round plain icon="delete"></QButton>
+        </div>
+    `,
+      })
+        .use(HqUI)
+        .mount("#app");
+    </script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 /// <reference types="vitest" />
-import { defineConfig } from "vite";
+import { defineConfig, UserConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import { presetUno, presetAttributify, presetIcons } from "unocss";
@@ -14,8 +14,8 @@ const rollupOptions = {
     },
   },
 };
-// https://vitejs.dev/config/
-export default defineConfig({
+
+export const config = {
   plugins: [
     vue(),
     vueJsx(),
@@ -38,8 +38,9 @@ export default defineConfig({
       entry: "./src/entry.ts",
       name: "HqUI",
       fileName: "hq-ui",
-      formats: ["es", "umd", "iife"]
+      formats: ["es", "umd", "iife"],
     },
+    outDir: "./dist",
   },
   server: {
     port: 1167,
@@ -51,4 +52,6 @@ export default defineConfig({
       web: [/.[tj]sx$/],
     },
   },
-});
+};
+// https://vitejs.dev/config/
+export default defineConfig(config as UserConfig);
