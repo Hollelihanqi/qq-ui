@@ -150,6 +150,19 @@ importers:
   packages/hq-ui-vite/dist/Button:
     specifiers: {}
 
+  packages/hq-ui-vite/docs:
+    specifiers:
+      hq-ui-vite: workspace:^1.0.0
+      vitepress: 1.0.0-alpha.4
+      vitepress-theme-demoblock: ^1.4.2
+      vue: 3.2.37
+    dependencies:
+      hq-ui-vite: link:../dist
+      vue: 3.2.37
+    devDependencies:
+      vitepress: 1.0.0-alpha.4
+      vitepress-theme-demoblock: 1.4.2
+
 packages:
 
   /@algolia/autocomplete-core/1.7.1:
