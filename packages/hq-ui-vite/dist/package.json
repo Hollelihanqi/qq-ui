@@ -11,8 +11,6 @@
     "docs:dev": "pnpm run register:components && vitepress dev docs --port 5174",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
-    "lint": "eslint --fix --ext .ts,.vue src",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
     "register:components": "vitepress-rc",
     "test": "vitest",
     "test:run": "vitest run",

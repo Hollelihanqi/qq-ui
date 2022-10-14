@@ -1,11 +1,11 @@
-import { createApp,h } from "vue";
+import { createApp } from "vue";
 
 // import QButton from './button/index'
 // import SFCButton from './SFCButton.vue'
 // import JSXButton from './JSXButton'
-import HqUI from './entry'
+import HqUI from "./entry";
 const app = createApp({
-    template:`
+  template: `
         <div style="display:flex;flex-direction:column;gap:16px">
             <div>
                 <QButton color="blue">普通按钮</QButton>
@@ -40,7 +40,7 @@ const app = createApp({
                 <QButton color="pink" size="large" icon="check" >large</QButton>
             </div>
         </div>
-    `
-})
-app.use(HqUI)
-app.mount("#app")
+    `,
+});
+app.use(HqUI);
+app.mount("#app");

@@ -48,7 +48,7 @@ const buildAll = async () => {
       fs.outputFile(
         resolve(outDir, `package.json`),
         `{
-            "name":"hq-ui-vite/${name},
+            "name":"hq-ui-vite/${name}",
             "main":"index.umd.js",
             "module":"index.esm.js"
         }`,
