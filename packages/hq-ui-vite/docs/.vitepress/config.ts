@@ -1,8 +1,8 @@
-// import {demoBlockPlugin} from 'vitepress-theme-demoblock'
+// import { demoBlockPlugin } from 'vitepress-theme-demoblock'
 const sidebar =[
     {
         text: '快速开始',
-        items: [
+        items: [ 
             {
                 text:'通用',
                 items:[
